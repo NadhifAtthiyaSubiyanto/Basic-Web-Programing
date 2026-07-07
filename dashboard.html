@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard IoT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="dashboard-title">
+    Dashboard Monitoring IoT
+</h1>
+
+<div class="sensor-container">
+
+    <div class="card">
+        <h3>Suhu</h3>
+        <h2 id="suhu">0 °C</h2>
+    </div>
+
+    <div class="card">
+        <h3>Kelembaban</h3>
+        <h2 id="kelembaban">0 %</h2>
+    </div>
+
+    <div class="card">
+        <h3>Cahaya</h3>
+        <h2 id="cahaya">0 Lux</h2>
+    </div>
+
+</div>
+
+<div class="control">
+
+    <h2>Kontrol Aktuator</h2>
+
+    <button onclick="kontrol('Lampu')">
+        Lampu
+    </button>
+
+    <button onclick="kontrol('Kipas')">
+        Kipas
+    </button>
+
+    <button onclick="kontrol('Pompa')">
+        Pompa
+    </button>
+
+</div>
+
+<div class="log">
+    <h2>Aktivitas / Log</h2>
+    <ul id="logAktivitas"></ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
